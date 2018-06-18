@@ -6,18 +6,13 @@ export default function fizzbuzz(n) {
 
     let i = 0
 
-    i += 1
-    arr.push(i)
-    if (n === i) {
-        return arr
+    while (i < n) {
+        i += 1;
+        if (i === 3) {
+            arr.push("Fizz");
+        } else {
+            arr.push(i);
+        }
     }
-
-    i += 1;
-    arr.push(i)
-    if (n === i) {
-        return arr
-    }
-    
-    arr.push("Fizz")
-    return arr   
+    return arr;   
 }
