@@ -3,14 +3,21 @@ export default function fizzbuzz(n) {
         return
 
     let arr = []
-    arr.push(1)
-    if (n === 1) {
+
+    let i = 0
+
+    i += 1
+    arr.push(i)
+    if (n === i) {
         return arr
     }
-    arr.push(2)
-    if (n === 2) {
+
+    i += 1;
+    arr.push(i)
+    if (n === i) {
         return arr
     }
+    
     arr.push("Fizz")
-    return arr
+    return arr   
 }
