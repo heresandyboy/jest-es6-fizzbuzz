@@ -1,3 +1,6 @@
 export default function fizzbuzz(number) {
-    return    
+    if (!number)
+    return
+
+    return [1]    
 }
