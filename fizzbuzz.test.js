@@ -23,3 +23,7 @@ test(`an argument of 5 gives [1, 2, "Fizz", 4, "Buzz"]`, function () {
 test(`an argument of 6 gives [1, 2, "Fizz", 4, "Buzz", "Fizz"]`, function () {
   expect(fizzbuzz(6)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz"]);
 });
+
+test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]`, function () {
+  expect(fizzbuzz(10)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]);
+});
