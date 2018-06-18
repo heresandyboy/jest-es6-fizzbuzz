@@ -34,3 +34,9 @@ git commit -m "first commit"
 git remote add origin https://github.com/heresandyboy/jest-es6-fizzbuzz.git
 git push -u origin master
 ```
+
+
+## TODO:
+
+* Better test reporting
+* Use es6 classes

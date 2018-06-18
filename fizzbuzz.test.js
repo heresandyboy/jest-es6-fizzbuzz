@@ -9,9 +9,13 @@ test('an argument of 1 gives [1]', () => {
 })
 
 test("an argument of 2 gives [1, 2]", function () {
-  expect(fizzbuzz(2)).toEqual([1, 2]);
-});
+  expect(fizzbuzz(2)).toEqual([1, 2])
+})
 
 test(`an argument of 3 gives [1, 2, "Fizz"]`, function () {
-  expect(fizzbuzz(3)).toEqual([1, 2, "Fizz"]);
-});
+  expect(fizzbuzz(3)).toEqual([1, 2, "Fizz"])
+})
+
+test(`an argument of 5 gives [1, 2, "Fizz", 4, "Buzz"]`, function () {
+  expect(fizzbuzz(5)).toEqual([1, 2, "Fizz", 4, "Buzz"])
+})
