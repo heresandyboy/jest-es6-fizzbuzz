@@ -1,6 +1,7 @@
 # jest-es6-fizzbuzz
 
 fizzbuzz step by step solution based on the following but without any browser stuff
+
 [Code kata time - Fizzbuzz+Jest+Live webpage update](https://www.sitepoint.com/community/t/code-kata-time-fizzbuzz-jest-live-webpage-update/284930/5)
 
 ## Run tests with watch
