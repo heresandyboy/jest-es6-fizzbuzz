@@ -2,8 +2,11 @@ export default function fizzbuzz(number) {
     if (!number)
         return
 
-    if (number == 1)
-    return [1]
-
-    return [1, 2]    
+        let arr = []
+        arr.push(1)
+        if (number === 1) {
+            return arr
+        }
+        arr.push(2);
+        return arr
 }
