@@ -5,5 +5,5 @@ test('does nothing with no argument', () => {
 })
 
 test('should give 1 when given 1 as argument', () => {
-  expect(fizzbuzz(1)).toEqual([1])
+  expect(fizzbuzz(1)).toEqual([1]) 
 })
