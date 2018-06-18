@@ -8,22 +8,22 @@ test('an argument of 1 gives [1]', () => {
   expect(fizzbuzz(1)).toEqual([1]) 
 })
 
-test("an argument of 2 gives [1, 2]", function () {
+test("an argument of 2 gives [1, 2]", () => {
   expect(fizzbuzz(2)).toEqual([1, 2])
 })
 
-test(`an argument of 3 gives [1, 2, "Fizz"]`, function () {
+test(`an argument of 3 gives [1, 2, "Fizz"]`, () => {
   expect(fizzbuzz(3)).toEqual([1, 2, "Fizz"])
 })
 
-test(`an argument of 5 gives [1, 2, "Fizz", 4, "Buzz"]`, function () {
+test(`an argument of 5 gives [1, 2, "Fizz", 4, "Buzz"]`, () => {
   expect(fizzbuzz(5)).toEqual([1, 2, "Fizz", 4, "Buzz"])
 })
 
-test(`an argument of 6 gives [1, 2, "Fizz", 4, "Buzz", "Fizz"]`, function () {
+test(`an argument of 6 gives [1, 2, "Fizz", 4, "Buzz", "Fizz"]`, () => {
   expect(fizzbuzz(6)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz"]);
 });
 
-test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]`, function () {
+test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]`, () => {
   expect(fizzbuzz(10)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]);
 });

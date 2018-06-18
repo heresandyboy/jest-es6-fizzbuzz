@@ -10,7 +10,7 @@ export default function fizzbuzz(n) {
         i += 1;
         if (i % 3 === 0) {
             arr.push("Fizz")
-        } else if (i === 5) {
+        } else if (i % 5 === 0) {
             arr.push("Buzz")
         } else {
             arr.push(i);
