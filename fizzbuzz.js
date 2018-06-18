@@ -9,10 +9,12 @@ export default function fizzbuzz(n) {
     while (i < n) {
         i += 1;
         if (i === 3) {
-            arr.push("Fizz");
+            arr.push("Fizz")
+        } else if (i === 5) {
+            arr.push("Buzz")
         } else {
             arr.push(i);
         }
     }
-    return arr;   
+    return arr;
 }
