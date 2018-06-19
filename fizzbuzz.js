@@ -9,23 +9,15 @@ export default function fizzbuzz(n) {
     while (i < n) {
         i += 1;
         let str = ""
-
         if (i % 3 === 0) {
-            str = "Fizz"
+            str += "Fizz"
         }
-
         if (i % 5 === 0) {
-            str = "Buzz"
+            str += "Buzz"
         }
-
-        if (i % 3 === 0 && i % 5 === 0) {
-            str = "FizzBuzz";
-        }
-
         if (str === "") {
-            str = i;
+            str = i
         }
-
         arr.push(str);
     }
 
