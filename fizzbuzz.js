@@ -8,7 +8,7 @@ export default function fizzbuzz(n) {
 
     while (i < n) {
         i += 1;
-        str = "";
+        let str = "";
         if (i % 15 === 0) {
             str = "FizzBuzz"
             arr.push(str)
@@ -19,7 +19,7 @@ export default function fizzbuzz(n) {
             str = "Buzz"
             arr.push(str)
         }
-        
+
         if (str === "") {
             arr.push(i)
         }
