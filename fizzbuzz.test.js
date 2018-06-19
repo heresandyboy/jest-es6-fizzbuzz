@@ -1,7 +1,6 @@
 import fizzbuzz from './fizzbuzz';
 
 // Example of bad naming - does not describe the spec
-// test this gives that is only good for understanding each step you are taking 
 // to develop, does not describe to the user the actual rules
 // maybe continue to refactor tests to give proper spec
 
