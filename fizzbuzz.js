@@ -9,10 +9,10 @@ const fizzbuzz = (n) => {
     while (i < n) {
         i += 1;
         let str = ""
-        if (i % 3 === 0) {
+        if (divisibleBy3(i)) {
             str += "Fizz"
         }
-        if (i % 5 === 0) {
+        if (divisbleBy5(i)) {
             str += "Buzz"
         }
         if (str === "") {
@@ -22,6 +22,15 @@ const fizzbuzz = (n) => {
     }
 
     return arr;
+}
+
+
+function divisbleBy5 (i) {
+    return i % 5 === 0;
+}
+
+function divisibleBy3 (i) {
+    return i % 3 === 0;
 }
 
 export default fizzbuzz
