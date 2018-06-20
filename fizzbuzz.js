@@ -1,34 +1,43 @@
+const _rules = new Map()
+    .set(3, "Fizz")
+    .set(5, "Buzz")
+
 const fizzbuzz = (n) => {
     if (!n)
         return
 
     let arr = []
     let i = 0
-    
-     
+
     while (i < n) {
         i += 1;
-        let str = ""
-        if (number(i).isDivisibleBy(3)) {
-            str += say("Fizz");
-        }        
-        if (number(i).isDivisibleBy(5)) {
-            str += say("Buzz")
-        }
-        if (str === "") {
-            str = say(i)
-        }
+        let str = sayForRule(i)
         arr.push(str);
     }
-
     return arr;
 }
 
-const number = (numberToCheck) => ({isDivisibleBy: (divisor) => {
-    return numberToCheck % divisor ==0 
-}})
+const sayForRule = (i) => {
+    let str = ""
 
-const say = (something) => {    
+    for (const [key, value] of _rules) {
+        if (number(i).isDivisibleBy(key))
+            str += say(value)
+    }
+
+    if (str === "")
+        str = say(i)
+        
+    return str
+}
+
+const number = (numberToCheck) => ({
+    isDivisibleBy: (divisor) => {
+        return numberToCheck % divisor == 0
+    }
+})
+
+const say = (something) => {
     return something;
 }
 
