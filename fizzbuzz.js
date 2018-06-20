@@ -1,6 +1,7 @@
 const _rules = new Map()
     .set(3, "Fizz")
     .set(5, "Buzz")
+    .set(7, "Bang")
 
 const fizzbuzz = (n) => {
     if (!n)
@@ -27,7 +28,7 @@ const sayForRule = (i) => {
 
     if (str === "")
         str = say(i)
-        
+
     return str
 }
 

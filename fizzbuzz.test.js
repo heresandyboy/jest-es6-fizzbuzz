@@ -33,14 +33,14 @@ describe('A fizzbuzz game', () => {
       expect(fizzbuzz(7)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang"])
     })
 
-    test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]`, () => {
+    test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang", 8, "Fizz", "Buzz"]`, () => {
       expect(fizzbuzz(10))
-      .toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"])
+      .toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang", 8, "Fizz", "Buzz"])
     })
 
     test(`an argument of 15 gives [..., 11, "Fizz", 13, 14, "FizzBuzz"]`, () => {
       expect(fizzbuzz(15))
-      .toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"])
+      .toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang", 8, "Fizz", "Buzz", 11, "Fizz", 13, "Bang", "FizzBuzz"])
     })
   })
 })
