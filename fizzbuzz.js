@@ -10,10 +10,10 @@ const fizzbuzz = (n) => {
         i += 1;
         let str = ""
         if (divisibleBy3(i)) {
-            str += "Fizz"
+            str += say("Fizz");
         }
         if (divisbleBy5(i)) {
-            str += "Buzz"
+            str += say("Buzz")
         }
         if (str === "") {
             str = i
@@ -24,6 +24,10 @@ const fizzbuzz = (n) => {
     return arr;
 }
 
+
+function say (word) {    
+    return word;
+}
 
 function divisbleBy5 (i) {
     return i % 5 === 0;
