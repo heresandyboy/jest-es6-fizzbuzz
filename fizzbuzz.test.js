@@ -40,7 +40,7 @@ describe('A fizzbuzz game', () => {
       test(`an argument of 7 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang"]`, () => {
         expect(fizzbuzz(7)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang"])
       })
-      test(`an argument of 15 gives [..., 11, "Fizz", 13, 14, "FizzBuzz"]`, () => {
+      test(`an argument of 14 gives [..., 11, "Fizz", 13, 14, "FizzBuzz"]`, () => {
         expect(fizzbuzz(14))
           .toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang", 8, "Fizz", "Buzz", 11, "Fizz", 13, "Bang"])
       })
