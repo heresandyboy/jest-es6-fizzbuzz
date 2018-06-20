@@ -3,20 +3,20 @@ const fizzbuzz = (n) => {
         return
 
     let arr = []
-
     let i = 0
-
+    
+     
     while (i < n) {
         i += 1;
         let str = ""
-        if (divisibleBy3(i)) {
+        if (number(i).isDivisibleBy(3)) {
             str += say("Fizz");
-        }
-        if (divisbleBy5(i)) {
+        }        
+        if (number(i).isDivisibleBy(5)) {
             str += say("Buzz")
         }
         if (str === "") {
-            str = i
+            str = say(i)
         }
         arr.push(str);
     }
@@ -24,17 +24,12 @@ const fizzbuzz = (n) => {
     return arr;
 }
 
+const number = (numberToCheck) => ({isDivisibleBy: (divisor) => {
+    return numberToCheck % divisor ==0 
+}})
 
-const say = (word) => {    
-    return word;
-}
-
-const divisbleBy5 = (i) => {
-    return i % 5 === 0;
-}
-
-const divisibleBy3 = (i) => {
-    return i % 3 === 0;
+const say = (something) => {    
+    return something;
 }
 
 export default fizzbuzz
