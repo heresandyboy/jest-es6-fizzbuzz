@@ -1,9 +1,5 @@
 import fizzbuzz from './fizzbuzz';
 
-// Example of bad naming - does not describe the spec
-// to develop, does not describe to the user the actual rules
-// maybe continue to refactor tests to give proper spec
-
 test('does nothing with no argument', () => {
   expect(fizzbuzz()).toBeUndefined();
 })
@@ -32,6 +28,6 @@ test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "B
   expect(fizzbuzz(10)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"])
 });
 
-test(`an argument of 15 gives [..., 11, "Fizz", 13, 14, "FizzBuzz"]`, function () {
+test(`an argument of 15 gives [..., 11, "Fizz", 13, 14, "FizzBuzz"]`,  () => {
   expect(fizzbuzz(15)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"])
 });

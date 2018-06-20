@@ -1,4 +1,4 @@
-export default function fizzbuzz(n) {
+const fizzbuzz = (n) => {
     if (!n)
         return
 
@@ -23,3 +23,5 @@ export default function fizzbuzz(n) {
 
     return arr;
 }
+
+export default fizzbuzz
