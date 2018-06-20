@@ -25,15 +25,15 @@ const fizzbuzz = (n) => {
 }
 
 
-function say (word) {    
+const say = (word) => {    
     return word;
 }
 
-function divisbleBy5 (i) {
+const divisbleBy5 = (i) => {
     return i % 5 === 0;
 }
 
-function divisibleBy3 (i) {
+const divisibleBy3 = (i) => {
     return i % 3 === 0;
 }
 
