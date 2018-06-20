@@ -29,6 +29,10 @@ describe('A fizzbuzz game', () => {
       expect(fizzbuzz(6)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz"])
     })
 
+    test(`an argument of 7 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang"]`, () => {
+      expect(fizzbuzz(7)).toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", "Bang"])
+    })
+
     test(`an argument of 10 gives [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]`, () => {
       expect(fizzbuzz(10))
       .toEqual([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"])
