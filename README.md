@@ -22,7 +22,7 @@ or
 ```npm run test```
 
 
-## vscode plugins
+## vscode plugins tried
 
 Jest ```orta.vscode-jest```
 

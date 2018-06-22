@@ -1,6 +1,5 @@
 import fizzbuzz from './fizzbuzz';
 
-
 describe('A fizzbuzz game', () => {
 
   describe('takes a number as an argument and gives an array response', () => {

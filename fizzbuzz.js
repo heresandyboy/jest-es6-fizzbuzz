@@ -4,8 +4,7 @@ const _rules = new Map()
     .set(7, "Bang")
 
 const fizzbuzz = (n) => {
-    if (!n)
-        return
+    if (!n) return
 
     let arr = []
     let i = 0
@@ -20,15 +19,12 @@ const fizzbuzz = (n) => {
 
 const sayForRule = (i) => {
     let str = ""
-
     for (const [key, value] of _rules) {
         if (number(i).isDivisibleBy(key))
             str += say(value)
     }
-
     if (str === "")
         str = say(i)
-
     return str
 }
 
